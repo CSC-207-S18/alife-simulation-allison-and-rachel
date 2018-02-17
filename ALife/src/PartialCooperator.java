@@ -1,8 +1,8 @@
 import java.util.Random; 
 
 public class PartialCooperator extends Organism {
-	// private int energy;
-	public double coopProb;
+
+	private double coopProb;
 
 	public PartialCooperator() {
 		this.coopProb = .5;
@@ -21,7 +21,7 @@ public class PartialCooperator extends Organism {
 	}
 
 	public double getCooperationProbability() {
-		return .5;
+		return this.coopProb;
 	}
 
 	public boolean cooperates() {
