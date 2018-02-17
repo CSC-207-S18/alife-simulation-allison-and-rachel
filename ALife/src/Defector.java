@@ -1,7 +1,6 @@
 
 public class Defector extends Organism {
-	// private int energy;
-	public double coopProb;
+	private double coopProb;
 
 	public Defector() {
 		this.coopProb = 0;
@@ -12,7 +11,7 @@ public class Defector extends Organism {
 	}
 
 	public Organism reproduce() {
-		PartialCooperator newOrg = new PartialCooperator();
+		Defector newOrg = new Defector();
 		for (int i = 0; i < 10; i++) {
 			this.decrementEnergy();
 		}
@@ -20,7 +19,7 @@ public class Defector extends Organism {
 	}
 
 	public double getCooperationProbability() {
-		return 0;
+		return this.coopProb;
 	}
 
 	public boolean cooperates() {
