@@ -1,11 +1,13 @@
 
+
 public class Cooperator extends Organism {
 
-	public double coopProb;
+	private double coopProb;
 
 	public Cooperator() {
 		super();
 		this.coopProb = 1;
+		
 	}
 
 	public String getType() {
@@ -21,7 +23,7 @@ public class Cooperator extends Organism {
 	}
 
 	public double getCooperationProbability() {
-		return 1;
+		return this.coopProb;
 	}
 
 	public boolean cooperates() {
