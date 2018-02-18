@@ -5,7 +5,7 @@ Report:
 
 1 cooperator and 9 defector:
   We expected there to be very few or no cooperators at the end of this test. This is because 10% of the population are cooperators, so the odds that 
-the only cooperator would be randomly chosen as the organism to replace are high. We thought that the removed cooperators would be replaced by 
+the only cooperator would be randomly chosen as the organism to replace are fairly low, so there is a chance there could be some cooperators, but it is unlikely. We thought that the removed cooperators would be replaced by 
 defectors. We expected there to be no partial cooperators because none of the existing population are partial cooperators, so they couldn't produce 
 partial cooperator offspring. This prediction was supported by our results; 100% of the population was defectors by the end of every test. We 
 justify this using the same reasons we justified our predictions. 
@@ -73,7 +73,7 @@ Mean Cooperation Probability = 0.0
 Average = 0.0
 
 1 Cooperator and 99 Defectors
-  We expected there to be very few cooperators at the end of this test, but there would probably still be one, since only 1% of the population is 
+  We expected there to be very few cooperators at the end of this test, but there could still be some, since only 1% of the population is 
 cooperators. This would make it less likely that that single cooperator would be randomly chosen and replaced by the reproduce method. However, the 
 high proportion of defectors would cause the resulting population to be mostly defectors with only 1 cooperator. Our predictions were largely correct; 
 every test resulted in populations that were primarily defectors. However, only one of those tests left us with any cooperators, which was a lower 
@@ -209,10 +209,10 @@ Mean Cooperation Probability = 1.0
 Average = 0.71
 
 99 Cooperators and 1 Defectors
-Similar to our 1 cooperator, 99 defector test: there would be more cooperators than defectors, but there would likely still be 1 defector
+  Similar to our 1 cooperator, 99 defector test, there would be more cooperators than defectors, but there could still be some defectors
 because the probability of replacing that defector is lower. This wasn't quite what happened; while we were right that there would be more 
-cooperators than defectors in the resulting populations, we were wrong that there would be 1 remaining defector. All of the populations were 
-100% cooperators. This makes sense because we had 100 iterations, which is plenty of chances to randomly replace the single defector. 
+cooperators than defectors in the resulting populations, we were wrong that there would be a few remaining defector. All of the populations were 
+100% cooperators. This makes sense because we had 100 iterations, which is allows it to randomly replace the single defector. 
   Results:
 After 100 ticks:
 Cooperators = 100
@@ -278,10 +278,7 @@ Average = 1.0
 
 3 Cooperators, 3 Defectors, and 4 Partial Cooperators
   Since the organism proportions of the starting population are roughly equal, we expected the resulting population to have roughly equal proportions of each 
-organism. This is not what happened at all. In each test, there was one type of organism which became 100% of the population, while the others fell to 0%. 
-We understand that this is because replacing 8 of the members of this population meant replacing 80% of it; thus, one call to reproduction would mean that
-the type of the organism reproduced would become virtually the entire population. After that first iteration, it was essentially impossible for the other
-types to recover. 
+organism. This is not what happened at all. In each test, there was one type of organism which became 100% of the population, while the others fell to 0%. This is because when an organism reproduces, the probability of replacing an organism of a type different than their own is fairly high, so they are able to dominate the population.
   Results:
 After 100 ticks:
 Cooperators = 10
@@ -347,9 +344,8 @@ Average = 0.55
 
 33 Cooperators, 33 Defectors, and 34 Partial Cooperators
 Given the results of the previous test, we expected this population to do the same: have one type which reproduces until there's nothing left
-of the other types. However, we expected this test to result in a slightly more even distribution of each type, since replacing 8 of the organisms 
-would only replace 8% of the population, as this population is far bigger than the previous one. We were correct; although there was an organism 
-type which clearly outcompeted the others, it didn't manage to replace all of its competitors, and proportions were far better distributed. We
+of the other types. However, we expected this test to result in a slightly more even distribution of each type, since rthere is a larger population. We were correct; although there was an organism 
+type which clearly outcompeted the others, it didn't manage to replace all of its competitors, and proportions were far more evenly distributed. We
 understand why this happened for the same reasons that we made our predictions. 
   Results:
 After 100 ticks:
