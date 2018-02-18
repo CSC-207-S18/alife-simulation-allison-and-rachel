@@ -1,3 +1,4 @@
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,11 +9,12 @@ public static void main (String[] args) {
 	int coops = Integer.parseInt(args[1]);
 	int defs = Integer.parseInt(args[2]);
 	int partcoops = Integer.parseInt(args[3]);
+	
 	Map <String, Integer> PopCounts = new HashMap <String, Integer>();
 	PopCounts.put("Cooperator", coops);
 	PopCounts.put("Defector", defs);
 	PopCounts.put("PartialCooperator", partcoops);
-	
+
 	Population simPop = new Population(PopCounts);
 	for (int i = 0; i < iterations; i++) {
 		simPop.update();
@@ -25,7 +27,6 @@ public static void main (String[] args) {
 	System.out.println("Defectors = " + numDefs);
 	Integer numPartCoops = map.get("PartialCooperator");
 	System.out.println("Partial Cooperators = " + numPartCoops);
-	
 	double meanCoopProb = simPop.calculateCooperationMean();
 	System.out.println("Mean Cooperation Probability = " + meanCoopProb);
 }
