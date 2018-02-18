@@ -39,3 +39,4 @@ public abstract class Organism {
 	public abstract boolean cooperates();
 
 }
+
