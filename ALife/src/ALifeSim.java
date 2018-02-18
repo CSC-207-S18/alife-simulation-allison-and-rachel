@@ -3,7 +3,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ALifeSim {
-	
+
+	/**
+	 * A driver class with a main to create a simulation to test the 
+	 *  Population and Organism classes
+	 * 
+	 * @param args, containing the number of iterations, cooperators, 
+	 *        defectors, and partial cooperators
+	 */
 public static void main (String[] args) {
 	int iterations = Integer.parseInt(args[0]);
 	int coops = Integer.parseInt(args[1]);
