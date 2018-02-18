@@ -29,5 +29,4 @@ public class PartialCooperator extends Organism {
 		int rand = numGenerator.nextInt();
 		return (rand%2 == 0);
 	}
-
 }
