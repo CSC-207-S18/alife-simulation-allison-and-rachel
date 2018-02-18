@@ -1,5 +1,16 @@
 # alife-simulation-allison-and-rachel
 alife-simulation-allison-and-rachel created by GitHub Classroom
+# Members
+- Allison Brink
+- Rachel Nastelin
+# Contents
+All java files of the ALife project
+# Resources
+- Oracle for Map and Math.abs()
+- Previous readings and homework
+# alife-simulation-allison-and-rachel
+
+
 
 Report:
 
