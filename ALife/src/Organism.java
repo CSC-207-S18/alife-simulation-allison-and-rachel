@@ -3,7 +3,6 @@ public abstract class Organism {
 	private int energy;
 
 	public Organism() {
-		// super(null);
 		this.energy = 0;
 	}
 
