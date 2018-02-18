@@ -30,3 +30,4 @@ public class Cooperator extends Organism {
 		return true;
 	}
 }
+
