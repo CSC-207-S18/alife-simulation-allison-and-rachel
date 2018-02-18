@@ -32,7 +32,7 @@ public class Defector extends Organism {
 	}
 
 	/**
-	 * returns the probability that the Defector will cooperate, 1.0
+	 * returns the probability that the Defector will cooperate, 0.0
 	 * 
 	 * @return the cooperation probability of the Defector
 	 */	
